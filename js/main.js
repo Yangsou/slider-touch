@@ -53,6 +53,8 @@ window.addEventListener('load', () => {
   }
   var slideTranslateWhenTouch = (s) => {
     menus.style.transform = "translateX(" + s +"px)";
+    menus.style.WebkitTransform = "translateX(" + s +"px)";
+    menus.style.msTransform = "translateX(" + s +"px)";
   }
 
   holder.addEventListener('touchstart', (e) =>{
